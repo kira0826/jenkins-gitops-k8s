@@ -15,7 +15,7 @@ node {
                         sh "git config user.email devopssameera@gmail.com"
                         sh "git config user.name Sameera Dissanayaka"
                         //sh "git switch master"
-                        sh "cat deployment.yaml"
+                        sh "cat deployment.yml"
                         sh "sed -i 's+devopswithsam/jenkins-flask.*+devopswithsam/jenkins-flask:${DOCKERTAG}+g' deployment.yml"
                         sh "cat deployment.yml"
                         sh "git add ."
